@@ -4,11 +4,14 @@
 *:after {
   box-sizing: border-box;
 }
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 nav ul {
   list-style: none;
   display: flex;
-  gap: 10rem;
-  justify-content:center;
+  /* gap: 10rem; */
+  justify-content:space-around;
   font-size: 25px;
   color: white;
   background-color: black;
@@ -16,4 +19,23 @@ nav ul {
 
 h1{
   text-align: center;
+}
+
+#top-header {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+#own{
+
+}
+
+#delorean{
+
+}
+
+p{
+  color: aquamarine;
+  font-weight: bold;
 }
