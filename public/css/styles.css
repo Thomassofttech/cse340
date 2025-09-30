@@ -27,15 +27,28 @@ h1{
   
 }
 
-#own{
-
-}
-
-#delorean{
-
-}
-
 p{
   color: aquamarine;
   font-weight: bold;
 }
+
+body {
+  margin: 0; /* remove default margin */
+  padding: 0;
+  /* height: 100vh; full viewport height */
+/* background settings */
+  background-image: url("/images/site/checkerboard.jpg"); /* path to your image */
+  background-size: cover; /* scale to cover whole screen */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; /* prevent tiling */
+}
+
+#wrapper{
+  width: 70%;
+    background: white;
+    margin: 10vh auto;
+    border: 5px solid blue;
+}
+#own{
+}
+
