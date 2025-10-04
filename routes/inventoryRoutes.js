@@ -1,7 +1,7 @@
 // Needed Resources 
 const express = require("express")
 const router = new express.Router() 
-const invController = require("../controllers/invControllers")
+const invControllers = require("../controllers/invControllers")
 const utilities = require("../utilities")
 
 // Route to handle classification (Matches the getNav links)
