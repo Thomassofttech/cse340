@@ -7,40 +7,29 @@
 html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/* nav ul {
-  list-style: none;
-  display: flex;
-  /* gap: 10rem; */
-  justify-content:space-around;
-  font-size: 25px;
-  color: white;
-  background-color: black;
-/* }
 
 h1{
   text-align: center;
 }
 
-#top-header {
+ #top-header {
   display: flex;
   justify-content: space-between;
-  
-} */
+ }
 
-/* p{
-  color: aquamarine;
-  font-weight: bold;
+  #tools {
+  font-size: 1.5vw;
+  font-variant: small-caps;
+  display: flex;
+  width: 20%;
+  justify-content: space-evenly;
 }
 
- #wrapper{
-  width: 70%;
-    background: white;
-    margin: 10vh auto;
-    border: 5px solid blue;
-} 
-#own{
-} */
- */ */
+.siteName {
+  font-size: 2rem;
+  font-weight: 800;
+}
+  
 
 /* index.ejs styling */
  
@@ -72,7 +61,8 @@ opacity: .6;
 
 #hero li {
   list-style: none;
-  color: aqua;
+  color: #222;
+  background-color: white;
 }
 #hero ul {
   padding-left: 0%;
@@ -80,6 +70,7 @@ opacity: .6;
   margin-bottom: 2rem;
   max-width: 200%;
   margin-left: auto;
+  color: black;
   background-color: aliceblue;
 }
 
@@ -87,6 +78,7 @@ opacity: .6;
   margin-top: 0%;
   margin-bottom: 0%;
  color: antiquewhite;
+ background-color: black;
 }
  #actionbtn {
   display: inline-block;
@@ -97,6 +89,7 @@ opacity: .6;
  nav {
   background-color: var(--primary-text);
   color: var(--primary-background);
+
 }
 
 nav ul {
@@ -121,6 +114,10 @@ nav a {
   padding-bottom: 1em;
 }
 
+p {
+  color: var(--text-color);
+}
+
 body {
   width: 100%;
   margin: 0;  /*remove default margin */
@@ -135,7 +132,43 @@ body {
 
  #wrapper{
   width: 90%;
-    background: white;
+    background: white; 
     margin: 10vh auto;
     border: 5px solid blue;
 } 
+
+footer{
+  text-align: center;
+}
+/*******************************************
+     Review & Add-on - Home   
+   *******************************************/
+.flex-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 1vw;
+  }
+
+  #add-ons,
+  #review {
+    margin-top: 0;
+    flex: 1 0 45%;
+  }
+
+  #review h2,
+  #add-ons h2 {
+    font-size: 1.4em;
+    margin-bottom: 2em;
+  }
+
+  #add-ons {
+    order: -1;
+  }
+
+  #review li {
+    font-size: 1.1em;
+  }
+
+  #add-ons {
+    width: 45%;
+  }
