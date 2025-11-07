@@ -7,6 +7,129 @@
 html {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+body {
+  margin: 0;
+  /* remove default margin */
+  padding: 0;
+  /* height: 100vh; full viewport height */
+  /* background settings */
+  background-image: url("/images/site/checkerboard.jpg");
+  /* path to your image */
+  background-size: cover;
+  /* scale to cover whole screen */
+  background-position: center;
+  /* center the image */
+  background-repeat: no-repeat;
+  /* prevent tiling */
+}
+
+/* index.ejs styling */
+
+img {
+  max-width: 100%
+}
+
+h1 {
+  font-size: 1.2em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#hero {
+  background-image: url("/images/vehicles/delorean.jpg");
+  margin-right: auto;
+  margin-left: auto;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  background-repeat: no-repeat;
+}
+
+#hero a:hover {
+  opacity: .6;
+}
+
+#hero h2 {
+  margin-left: 0%;
+}
+
+#hero li {
+  list-style: none;
+  color: aqua;
+}
+
+#hero ul {
+  padding-left: 0%;
+  margin-top: 0%;
+  margin-bottom: 2rem;
+  max-width: 200%;
+  margin-left: auto;
+  background-color: aliceblue;
+}
+
+#hero li h2 {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: antiquewhite;
+}
+
+#actionbtn {
+  display: inline-block;
+  max-height: 10vh;
+  max-width: 300px;
+}
+
+nav {
+  background-color: var(--primary-text);
+  color: var(--primary-background);
+}
+
+nav ul {
+  display: flex;
+  padding: 0 1vw;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+}
+
+nav li {
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+nav a {
+  color: var(--primary-background);
+  text-decoration: none;
+  font-size: .85rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  /*remove default margin */
+  padding: 0;
+  height: 100vh;
+  /*full viewport height */
+  /*background settings */
+  background-image: url("/images/site/checkerboard.jpg");
+  /*path to your image */
+  background-size: cover;
+  /*scale to cover whole screen */
+  background-position: center;
+  /*center the image */
+  background-repeat: no-repeat;
+  /*prevent tiling */
+}
+
+#wrapper {
+  width: 90%;
+  background: white;
+  margin: 10vh auto;
+  border: 5px solid blue;
+}
 nav ul {
   list-style: none;
   display: flex;
@@ -25,14 +148,6 @@ h1{
   display: flex;
   justify-content: space-between;
   
-}
-
-#own{
-
-}
-
-#delorean{
-
 }
 
 p{
