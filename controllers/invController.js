@@ -5,7 +5,7 @@ const invCont = {}
 
 /* ***************************
  *  Build inventory by classification view
- *************************** */
+ * ************************** */
 invCont.buildByClassificationId = async function (req, res, next) {
   const classification_id = req.params.classificationId
   const data = await invModel.getInventoryByClassificationId(classification_id)
@@ -20,28 +20,31 @@ invCont.buildByClassificationId = async function (req, res, next) {
 }
 
 /* ***************************
- * Build vehicle detail view
- *************************** */
-invCont.buildByInvId = async function(req, res, next) {
-  try {
-    const invId = req.params.invId
-    // const vehicleData = await invModel.getVehicleById(invId)
-const vehicleData = await invModel.getInventoryById(invId)
-
-
-
-    const nav = await utilities.getNav()
-    const vehicleHTML = utilities.buildSingleVehicleDisplay(vehicleData)
-
-    res.render("inventory/detail", {
-      title: `${vehicleData.inv_make} ${vehicleData.inv_model}`,
-      nav,
-      vehicleHTML,
-      errors: null
-    })
-  } catch (error) {
-    next(error)
-  }
+ *  Build vehicle detail view
+ *  Assignment 3, Task 1
+ * ************************** */
+invCont.buildDetail = async function (req, res, next) {
+  const invId = req.params.id
+  let vehicle = await invModel.getInventoryById(invId)
+  const htmlData = await utilities.buildSingleVehicleDisplay(vehicle)
+  let nav = await utilities.getNav()
+  const vehicleTitle =
+    vehicle.inv_year + " " + vehicle.inv_make + " " + vehicle.inv_model
+  res.render("./inventory/detail", {
+    title: vehicleTitle,
+    nav,
+    message: null,
+    htmlData,
+  })
 }
+
+/* ****************************************
+ *  Process intentional error
+ *  Assignment 3, Task 3
+ * ************************************ */
+invCont.throwError = async function (req, res) {
+  throw new Error("I am an intentional error")
+}
+
 
 module.exports = invCont

@@ -13,4 +13,5 @@ baseController.triggerError = async function (req, res, next) {
   throw new Error("500 Server Error")  
 }
 
+
 module.exports = baseController

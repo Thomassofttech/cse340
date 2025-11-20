@@ -1,0 +1,223 @@
+/******* Change Box Model ***************/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  margin: 0;
+  /* remove default margin */
+  padding: 0;
+  /* height: 100vh; full viewport height */
+  /* background settings */
+  background-image: url("/images/site/checkerboard.jpg");
+  /* path to your image */
+  background-size: cover;
+  /* scale to cover whole screen */
+  background-position: center;
+  /* center the image */
+  background-repeat: no-repeat;
+  /* prevent tiling */
+}
+
+/* index.ejs styling */
+
+img {
+  max-width: 100%
+}
+
+h1 {
+  font-size: 1.2em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#hero {
+  background-image: url("/images/vehicles/delorean.jpg");
+  margin-right: auto;
+  margin-left: auto;
+  background-size: contain;
+  background-position: center;
+  display: flex;
+  background-repeat: no-repeat;
+}
+
+#hero a:hover {
+  opacity: .6;
+}
+
+#hero h2 {
+  margin-left: 0%;
+}
+
+#hero li {
+  list-style: none;
+  color: aqua;
+}
+
+#hero ul {
+  padding-left: 0%;
+  margin-top: 0%;
+  margin-bottom: 2rem;
+  max-width: 200%;
+  margin-left: auto;
+  background-color: aliceblue;
+}
+
+#hero li h2 {
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: antiquewhite;
+}
+
+#actionbtn {
+  display: inline-block;
+  max-height: 10vh;
+  max-width: 300px;
+}
+
+nav {
+  background-color: var(--primary-text);
+  color: var(--primary-background);
+}
+
+nav ul {
+  display: flex;
+  padding: 0 1vw;
+  justify-content: space-around;
+  background-color: black;
+  color: white;
+}
+
+nav li {
+  list-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+nav a {
+  color: var(--primary-background);
+  text-decoration: none;
+  font-size: .85rem;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  /*remove default margin */
+  padding: 0;
+  height: 100vh;
+  /*full viewport height */
+  /*background settings */
+  background-image: url("/images/site/checkerboard.jpg");
+  /*path to your image */
+  background-size: cover;
+  /*scale to cover whole screen */
+  background-position: center;
+  /*center the image */
+  background-repeat: no-repeat;
+  /*prevent tiling */
+}
+
+#wrapper {
+  width: 90%;
+  background: white;
+  margin: 10vh auto;
+  border: 5px solid blue;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  /* gap: 10rem; */
+  justify-content:space-around;
+  font-size: 25px;
+  color: white;
+  background-color: black;
+}
+
+h1{
+  text-align: center;
+}
+
+#top-header {
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+p{
+  color: aquamarine;
+  font-weight: bold;
+}
+
+.siteName{
+  font-size: 50px;
+  color:black;
+  text-decoration: none;
+}
+
+
+
+
+
+.inventoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.vehicleCard {
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vehicleImageBox {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.vehicleImageBox img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 4px;
+}
+
+.vehicleTitle {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  color: #003366;
+}
+
+.vehiclePrice {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.viewBtn {
+  display: inline-block;
+  background: #0056b3;
+  padding: 8px 16px;
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.viewBtn:hover {
+  background: #003d80;
+}
