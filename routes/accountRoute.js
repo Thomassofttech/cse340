@@ -1,0 +1,1 @@
+// const regValidate = require('../utilities/account-validation')

@@ -1,6 +1,8 @@
 const invModel = require("../models/inventory-model")
 
-
+// const utilities = require(".")
+//   const { body, validationResult } = require("express-validator")
+//   const validate = {}
 const Util = {}
 
 
@@ -256,20 +258,10 @@ Util.buildSingleVehicleDisplay = async (vehicle) => {
 
 
 /* ****************************************
-
-
  * Middleware For Handling Errors
-
-
  * Wrap other function in this for 
-
-
  * General Error Handling
-
-
  **************************************** */
-
-
 Util.handleErrors = fn => (req, res, next) => Promise.resolve(fn(req, res, next)).catch(next)
 
 

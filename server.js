@@ -28,23 +28,30 @@ app.use(static)
 // INDEX ROUTE
 app.get("/", function (req, res) { res.render("index", { title: "Home" }) })
 
+
 // Inventory routes
 app.use("/inv", inventoryRoute)
 
-/* *******************
-* Express Error Handler
-* place after all other middleware
-***********************/
-app.use(async(err, req, res, next) => {
+// File Not Found Route - must be last route in list
+app.use(async (req, res, next) => {
+  next({status: 404, message: 'Sorry, we appear to have lost that page.'})
+})
+
+/* ***********************
+ * Express Error Handler
+ * place after all other middleware
+ * Unit 3, Basic Error Handling Activity 
+ *************************/
+app.use(async (err, req, res, next) => {
   let nav = await utilities.getNav()
   console.error(`Error at: "${req.originalUrl}": ${err.message}`)
-  res.render("errors/error",{
+  if(err.status == 404){ message = err.message} else {message = 'Oh no! There was a crash. Maybe try a different route?'}
+  res.render("errors/error", {
     title: err.status || 'Server Error',
-    message: err.message,
+    message,
     nav
   })
 })
-
 /* ***********************
  * Local Server Information
  * Values from .env (environment) file

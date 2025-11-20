@@ -1,0 +1,13 @@
+<%# unit 3, assignment 3 , task 1 %>
+<% if (title) { %>
+<h1><%= title %></h1> <%
+} else {
+    res.redirect('/')
+} %>
+
+
+<% if (Object.entries(html).length > 0){ %>
+     <%- htmlData %>
+<% } else { %>
+<p class="notice"> Sorry, no matching vehicle could be found </p>
+<%} %>
