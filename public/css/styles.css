@@ -54,8 +54,6 @@ CSS Styles for CSE Motors
   --warning-background: rgb(240, 200, 207);
   --notice-background: yellow;
 }
-<<<<<<< HEAD
-=======
 
 img {
   max-width: 100%;
@@ -71,7 +69,6 @@ h2 {
   margin-left: 1em;
   list-style: none;
 }
->>>>>>> sec
 
 .message {
   font-weight: bold;
@@ -81,19 +78,6 @@ h2 {
   color: var(--primary-text);
 }
 
-<<<<<<< HEAD
- #top-header {
-  display: flex;
-  justify-content: space-between;
- }
-
-  #tools {
-  font-size: 1.5vw;
-  font-variant: small-caps;
-  display: flex;
-  width: 20%;
-  justify-content: space-evenly;
-=======
 .success {
   background-color: var(--success-background);
 }
@@ -138,15 +122,12 @@ input[type='Submit'] {
 #top-header {
   display: flex;
   justify-content: space-between;
->>>>>>> sec
 }
 
 .siteName {
   font-size: 2rem;
   font-weight: 800;
 }
-<<<<<<< HEAD
-=======
 
 #tools {
   font-size: 3.5vw;
@@ -155,37 +136,9 @@ input[type='Submit'] {
   width: 20%;
   justify-content: space-evenly;
   
->>>>>>> sec
   
-
-/* index.ejs styling */
- 
- img {
-  max-width: 100%
- }
-
- h1{
-  font-size: 1.2em;
-  font-family: 'Times New Roman', Times, serif;
- }
-#hero{
-  background-image: url("/images/vehicles/delorean.jpg");
-  margin-right: auto;
-  margin-left: auto;
-  background-size: contain;
-  background-position: center;
-  display: flex;
-  background-repeat: no-repeat;
 }
 
-<<<<<<< HEAD
-#hero a:hover{
-opacity: .6;
-}
-
-#hero h2 {
-  margin-left: 0%;
-=======
 header>img {
   max-width: 40%;
 }
@@ -309,96 +262,10 @@ hr {
 
 #hero a:hover {
   opacity: .5;
->>>>>>> sec
 }
 
 #hero li {
   list-style: none;
-<<<<<<< HEAD
-  color: #222;
-  background-color: white;
-}
-#hero ul {
-  padding-left: 0%;
-  margin-top: 0%;
-  margin-bottom: 2rem;
-  max-width: 200%;
-  margin-left: auto;
-  color: black;
-  background-color: aliceblue;
-}
-
-#hero li h2 {
-  margin-top: 0%;
-  margin-bottom: 0%;
- color: antiquewhite;
- background-color: black;
-}
- #actionbtn {
-  display: inline-block;
-  max-height: 10vh;
-  max-width: 300px;
- }
-
- nav {
-  background-color: var(--primary-text);
-  color: var(--primary-background);
-
-}
-
-nav ul {
-  display: flex;
-  padding: 0 1vw;
-  justify-content: space-around;
-  background-color: black;
-  color: white;
-}
-
-nav li {
-  list-style: none;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-nav a {
-  color: var(--primary-background);
-  text-decoration: none;
-  font-size: .85rem;
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-
-p {
-  color: var(--text-color);
-}
-
-body {
-  width: 100%;
-  margin: 0;  /*remove default margin */
-  padding: 0;
-  height: 100vh; /*full viewport height */
- /*background settings */ 
-  background-image: url("/images/site/checkerboard.jpg"); /*path to your image */
-  background-size: cover; /*scale to cover whole screen */
-  background-position: center;  /*center the image */
-  background-repeat: no-repeat; /*prevent tiling */
-}
-
- #wrapper{
-  width: 90%;
-    background: white; 
-    margin: 10vh auto;
-    border: 5px solid blue;
-} 
-
-footer{
-  text-align: center;
-}
-/*******************************************
-     Review & Add-on - Home   
-   *******************************************/
-.flex-content {
-=======
   color: var(--main-accent);
 
 }
@@ -780,7 +647,6 @@ text-align: center;
    *******************************************/
   /*#region*/
   .flex-content {
->>>>>>> sec
     display: flex;
     justify-content: space-between;
     gap: 1vw;
@@ -808,9 +674,6 @@ text-align: center;
 
   #add-ons {
     width: 45%;
-<<<<<<< HEAD
-  }
-=======
   }
 
   /*#endregion*/
@@ -876,4 +739,3 @@ text-align: center;
 
   /*#endregion*/
 }
->>>>>>> sec
