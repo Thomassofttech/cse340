@@ -1,26 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= title %></title>
-    <link rel="icon" type="image/png" href="https://github.githubassets.com/favicons/favicon.png">
-</head>
-<body>
-    <header>
-        <h1><%= title %></h1>
-    </header>
+<!-- views/errors/error.ejs -->
+<% if (title) { %>
+<h1><%= title %></h1>
+<% } else {
+  res.redirect('/')
+} %>
 
-    <main>
-        <div class="error-message">
-            <!-- show the error message -->
-            <%- message %>   
-        </div>
-
-        <div class="fun-note">
-            <img src="/images/cleverly-funny.webp" alt="Cleverly" width="100%"  height="auto">
-            <span>Oops! Something went wrong</span>
-        </div>
-    </main>
-</body>
-</html>
+<%- message %>
