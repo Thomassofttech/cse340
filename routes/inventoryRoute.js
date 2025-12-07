@@ -63,7 +63,7 @@ router.post(
  * Build add-vehicle View Route
  * Assignment 4, Task 3
  * checkAccountType added Unit 5, Assignment 5, Task 2
- **************************************** */
+  **************************************** */
 router.get(
   "/newVehicle",
   utilities.checkAccountType,
